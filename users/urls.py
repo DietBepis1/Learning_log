@@ -6,5 +6,5 @@ app_name = 'users'
 
 urlpatterns = [
     #Include default auth urls
-    path('', include(django.contrib.auth.urls)),
+    path('', include('django.contrib.auth.urls')),
 ]
