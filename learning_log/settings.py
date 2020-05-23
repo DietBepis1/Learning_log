@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'learning_logs',
     'users',
 
+    #Bootstrap, baby!
+    'bootstrap4',
+
     #Django default apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,3 +129,7 @@ STATIC_URL = '/static/'
 
 #My settings
 LOGIN_URL = 'users:login'
+
+#Heroku settings
+import django_heroku
+django_heroku.settings(locals())
